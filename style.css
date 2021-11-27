@@ -5,28 +5,28 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.app-header {
+header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.app-header img {
+header img {
   width: 100%;
 }
 
-.app-header .more-info {
+header .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .app-header {
+  header {
     text-align: center;
   }
 }
 
-.app-content {
+main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,6 +40,7 @@ body {
 
 .task-row-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 ul {
@@ -72,8 +73,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -98,12 +98,6 @@ input[type="text"] {
 
 input[type="text"]:focus {
   color: #333;
-}
-
-/* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
 }
 
 .task-row-wrapper input {
