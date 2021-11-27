@@ -74,7 +74,6 @@ var taskCompleted = function () {
   var listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 var taskIncomplete = function () {
@@ -105,7 +104,6 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
 }
 
 for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
-
   bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
